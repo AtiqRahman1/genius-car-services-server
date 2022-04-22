@@ -45,19 +45,18 @@ async function run() {
             const result = await serviceCollection.deleteOne(query);
             res.send(result);
         });
-
     }
     finally {
 
     }
-}
+};
 run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-    res.send('Running Genius Server')
+    res.send('Running Genius Server');
 });
 
 app.listen(port, () => {
     console.log('Listening to port', port);
-})
+});
